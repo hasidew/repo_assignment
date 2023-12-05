@@ -46,17 +46,16 @@
 
 
     <script>
+        
         function bold() {
             document.execCommand('bold', true, null);
         }
 
-        function underline() {
-            document.execCommand('underline', true, null);
-        }
 
         function italic() {
             document.execCommand('italic', true, null);
         }
+
 
         function fontcolor() {
             var color = prompt('Enter color :');
@@ -64,6 +63,12 @@
                 document.execCommand('foreColor', false, color);
             }
         }
+
+
+        function underline() {
+            document.execCommand('underline', true, null);
+        }
+       
     </script>
 
     <!--  Remove this div once you are started -->
