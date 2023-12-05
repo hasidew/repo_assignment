@@ -65,9 +65,8 @@
         }
 
 
-        function applyTextAlignment(value) {
-            document.getElementById('editor').style.textAlign = value;
-        }
+        function undo() {
+            document.execCommand('undo', false, null);
 
 
         function applyTextAlignment(value) {
@@ -79,13 +78,20 @@
             document.getElementById('editor').style.textAlign = value;
         }
 
-
         function applyTextAlignment(value) {
             document.getElementById('editor').style.textAlign = value;
+
         }
 
+        function redo() {
+            document.execCommand('redo', false, null);
+        }
 
+        function undo() {
+            document.execCommand('undo', false, null);
+        }
 
+</script>
 
         function underline() {
             document.execCommand('underline', true, null);
