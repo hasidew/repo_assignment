@@ -57,11 +57,18 @@
         }
 
 
+        function fontcolor() {
+            var color = prompt('Enter color :');
+            if (color) {
+                document.execCommand('foreColor', false, color);
+            }
+        }
+
+
         function underline() {
             document.execCommand('underline', true, null);
         }
        
-        
     </script>
 
     <!--  Remove this div once you are started -->
