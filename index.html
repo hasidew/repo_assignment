@@ -46,17 +46,16 @@
 
 
     <script>
+        
         function bold() {
             document.execCommand('bold', true, null);
         }
 
-        function underline() {
-            document.execCommand('underline', true, null);
-        }
 
         function italic() {
             document.execCommand('italic', true, null);
         }
+
 
         function fontcolor() {
             var color = prompt('Enter color :');
@@ -65,23 +64,40 @@
             }
         }
 
+
         function undo() {
             document.execCommand('undo', false, null);
+
+
+        function applyTextAlignment(value) {
+            document.getElementById('editor').style.textAlign = value;
+        }
+
+
+        function applyTextAlignment(value) {
+            document.getElementById('editor').style.textAlign = value;
+        }
+
+        function applyTextAlignment(value) {
+            document.getElementById('editor').style.textAlign = value;
+
         }
 
         function redo() {
             document.execCommand('redo', false, null);
         }
+
         function undo() {
             document.execCommand('undo', false, null);
-        }
-
-
-        function redo() {
-            document.execCommand('redo', false, null);
         }
 
 </script>
+
+        function underline() {
+            document.execCommand('underline', true, null);
+        }
+     
+    </script>
 
     <!--  Remove this div once you are started -->
     <div>
